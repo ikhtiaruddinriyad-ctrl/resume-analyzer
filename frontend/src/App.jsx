@@ -53,7 +53,7 @@ function App() {
     formData.append('jobDescription', jobDescription)
 
     try {
-      const response = await fetch('http://localhost:5050/analyze', {
+      const response = await fetch('https://resume-analyzer-backend-riev.onrender.com/analyze', {
         method: 'POST',
         body: formData,
       })
